@@ -6,7 +6,7 @@ This is a Python implementation of the [spintax](https://github.com/johnhenry/sp
 
 ## Requirements
 
-- Python 3.8+ (no external runtime dependencies)
+- Python 3.6+ (no external runtime dependencies)
 - Works anywhere Python runs: scripts, tests, data pipelines, CLIs
 
 ## Installation

@@ -6,13 +6,13 @@ This guide shows how to use `spintaxpy` alongside the original JavaScript `spint
 
 | Scenario | Python (`spintaxpy`) | JavaScript (`spintax`) |
 | --- | --- | --- |
-| Basic parse | `list(parse("Hi {a|b}"))` | `[...spintax.parse('Hi {a|b}')]` |
-| Count combos | `count("{a|b|c}")` | `spintax.count('{a|b|c}');` |
-| Pick one | `choose("{red|blue}")()` | `spintax.choose('{red|blue}')();` |
+| Basic parse | `list(parse("Hi {a\|b}"))` | `[...spintax.parse('Hi {a\|b}')]` |
+| Count combos | `count("{a\|b\|c}")` | `spintax.count('{a\|b\|c}');` |
+| Pick one | `choose("{red\|blue}")()` | `spintax.choose('{red\|blue}')();` |
 | Numeric ranges | `list(parse("{1,3}"))` | `[...spintax.parse('{1,3}')]` |
-| Custom delimiters | `parse("[x|y]", pattern_start="[", pattern_end="]")` | `spintax.parse('[x|y]', { patternStart: '[', patternEnd: ']' })` |
+| Custom delimiters | `parse("[x\|y]", pattern_start="[", pattern_end="]")` | `spintax.parse('[x\|y]', { patternStart: '[', patternEnd: ']' })` |
 | Custom separators | `parse("{A;B}", separator_choices=";")` | `spintax.parse('{A;B}', { separatorChoices: ';' })` |
-| Back references | `list(parse("{foo|bar} {$0}"))` | `[...spintax.parse('{foo|bar} {$0}')]` |
+| Back references | `list(parse("{foo\|bar} {$0}"))` | `[...spintax.parse('{foo\|bar} {$0}')]` |
 | Deterministic choice | `choose(...)(0, 1)` | `spintax.choose(...)(0, 1);` |
 | Lazy iteration | generator (default) | iterator (default) |
 
