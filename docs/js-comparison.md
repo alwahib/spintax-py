@@ -1,12 +1,12 @@
 # Python vs JavaScript spintax usage
 
-This guide shows how to use `spintaxpy` alongside the original JavaScript `spintax` library (https://github.com/johnhenry/spintax). The core syntax and outputs match so you can port templates between Python and JavaScript without rewriting patterns.
+This guide shows how to use `spintaxpy` alongside the original JavaScript `spintax` library ([GitHub](https://github.com/johnhenry/spintax)). The core syntax and outputs match so you can port templates between Python and JavaScript without rewriting patterns.
 
 ## Quick parity table
 
 | Scenario | Python (`spintaxpy`) | JavaScript (`spintax`) |
 | --- | --- | --- |
-| Basic parse | `list(parse("Hi {a|b}"))` | `[...spintax.parse('Hi {a|b}')];` |
+| Basic parse | `list(parse("Hi {a|b}"))` | `[...spintax.parse('Hi {a|b}')]` |
 | Count combos | `count("{a|b|c}")` | `spintax.count('{a|b|c}');` |
 | Pick one | `choose("{red|blue}")()` | `spintax.choose('{red|blue}')();` |
 | Numeric ranges | `list(parse("{1,3}"))` | `[...spintax.parse('{1,3}')]` |
