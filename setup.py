@@ -8,11 +8,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="spintax-py",
     version="1.0.0",
-    author="aalwhaib",
+    author="alwahib",
     description="A combinatorial string generation library that creates all possible combinations from templates with variable elements",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/aalwhaib/spintax-py",
+    url="https://github.com/alwahib/spintax-py",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
