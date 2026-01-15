@@ -1,4 +1,4 @@
-# Release Checklist for spintax-py
+# Release Checklist for spintaxpy
 
 ## Pre-Release Verification
 
@@ -11,7 +11,7 @@
 
 ## Package Information
 
-- **PyPI Package Name**: spintax-py
+- **PyPI Package Name**: spintaxpy
 - **Import Name**: spintax
 - **Current Version**: 1.0.0
 - **License**: MIT
@@ -40,7 +40,7 @@ python -m build
 ### 3. (Optional) Test on TestPyPI first
 ```bash
 python -m twine upload --repository testpypi dist/*
-pip install --index-url https://test.pypi.org/simple/ spintax-py
+pip install --index-url https://test.pypi.org/simple/ spintaxpy
 ```
 
 ### 4. Upload to PyPI
@@ -50,13 +50,13 @@ python -m twine upload dist/*
 
 ### 5. Verify installation
 ```bash
-pip install spintax-py
+pip install spintaxpy
 python -c "from spintax import parse; print(list(parse('Hello {world|friend}!')))"
 ```
 
 ## Post-Release
 
-- [ ] Verify package appears on https://pypi.org/project/spintax-py/
+- [ ] Verify package appears on https://pypi.org/project/spintaxpy/
 - [ ] Test installation from PyPI
 - [ ] Update GitHub release tags
 - [ ] Announce release

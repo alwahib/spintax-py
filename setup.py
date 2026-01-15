@@ -1,4 +1,4 @@
-"""Setup configuration for spintax-py library."""
+"""Setup configuration for spintaxpy library."""
 
 from setuptools import setup, find_packages
 
@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="spintax-py",
+    name="spintaxpy",
     version="1.0.0",
     author="alwahib",
     description="A combinatorial string generation library that creates all possible combinations from templates with variable elements",

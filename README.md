@@ -9,7 +9,7 @@ This is a Python implementation of the [spintax](https://github.com/johnhenry/sp
 Install from PyPI:
 
 ```bash
-pip install spintax-py
+pip install spintaxpy
 ```
 
 Or install from source:

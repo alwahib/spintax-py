@@ -1,6 +1,6 @@
 # Publishing to PyPI
 
-This document provides instructions for publishing the spintax-py package to PyPI.
+This document provides instructions for publishing the spintaxpy package to PyPI.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Before publishing to the real PyPI, test on TestPyPI:
 python -m twine upload --repository testpypi dist/*
 
 # Install from TestPyPI to test
-pip install --index-url https://test.pypi.org/simple/ spintax-py
+pip install --index-url https://test.pypi.org/simple/ spintaxpy
 ```
 
 ## Publish to PyPI
@@ -75,7 +75,7 @@ python -m twine upload dist/*
 After publishing, verify the package can be installed:
 
 ```bash
-pip install spintax-py
+pip install spintaxpy
 ```
 
 Test the installation:
@@ -109,7 +109,7 @@ When releasing a new version:
 
 ## Package Information
 
-- **Package name on PyPI**: spintax-py
+- **Package name on PyPI**: spintaxpy
 - **Import name**: spintax
 - **Current version**: 1.0.0
 - **License**: MIT
@@ -117,6 +117,6 @@ When releasing a new version:
 
 ## Resources
 
-- PyPI Project Page: https://pypi.org/project/spintax-py/ (after first publish)
+- PyPI Project Page: https://pypi.org/project/spintaxpy/ (after first publish)
 - Packaging User Guide: https://packaging.python.org/
 - Twine Documentation: https://twine.readthedocs.io/
