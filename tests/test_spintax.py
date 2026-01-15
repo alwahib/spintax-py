@@ -1,7 +1,7 @@
 """Tests for spintax-py library"""
 
 import unittest
-from spintax import parse, count, choose, spintax_range
+from spintaxpy import parse, count, choose, spintax_range
 
 
 class TestRange(unittest.TestCase):

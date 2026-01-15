@@ -6,6 +6,14 @@ This is a Python implementation of the [spintax](https://github.com/johnhenry/sp
 
 ## Installation
 
+Install from PyPI:
+
+```bash
+pip install spintaxpy
+```
+
+Or install from source:
+
 ```bash
 pip install .
 ```
@@ -13,7 +21,7 @@ pip install .
 ## Basic Usage
 
 ```python
-from spintax import parse
+from spintaxpy import parse
 
 # Basic usage with choices
 variations = parse("Hello, {world|friend|universe}!")
@@ -181,7 +189,7 @@ Counts the number of combinations for a given string template.
 
 **Example:**
 ```python
-from spintax import count
+from spintaxpy import count
 
 count("Hello!")  # 1
 count("Hello {world|people|nurse}!")  # 3
@@ -198,7 +206,7 @@ Creates a function that returns a single combination (random or by index).
 
 **Example:**
 ```python
-from spintax import choose
+from spintaxpy import choose
 
 picker = choose("The {red|blue|green} {box|circle}")
 picker()  # Random combination like "The red box"
@@ -220,7 +228,7 @@ Creates a generator that yields numbers within a specified range.
 
 **Example:**
 ```python
-from spintax import spintax_range
+from spintaxpy import spintax_range
 
 list(spintax_range(1, 5))  # [1, 2, 3, 4, 5]
 list(spintax_range(0, 10, 3, True))  # [0, 3, 6, 9, 10]
@@ -259,7 +267,7 @@ all_combinations = list(parse("..."))
 ## Examples
 
 ```python
-from spintax import parse, count, choose
+from spintaxpy import parse, count, choose
 
 # Example 1: Simple greeting variations
 greetings = list(parse("Hello, {world|friend|universe}!"))

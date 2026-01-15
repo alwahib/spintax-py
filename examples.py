@@ -1,6 +1,6 @@
 """Example usage of spintax-py library"""
 
-from spintax import parse, count, choose, spintax_range
+from spintaxpy import parse, count, choose, spintax_range
 
 print("=" * 60)
 print("SPINTAX-PY EXAMPLES")
