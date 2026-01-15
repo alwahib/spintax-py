@@ -1,5 +1,6 @@
 """Tests for spintax-py library"""
 
+import random
 import unittest
 from spintaxpy import parse, count, choose, spintax_range
 
@@ -166,6 +167,18 @@ class TestChoose(unittest.TestCase):
         
         result = picker(1)
         self.assertEqual(result, "The strawberries taste like strawberries")
+
+    def test_choose_seed_reproducible(self):
+        """Test that seeding random makes chooser outputs reproducible"""
+        picker = choose("{alpha|beta} {cat|dog}")
+
+        random.seed(99)
+        first_run = (picker(), picker())
+
+        random.seed(99)
+        second_run = (picker(), picker())
+
+        self.assertEqual(first_run, second_run)
 
 
 class TestIteration(unittest.TestCase):

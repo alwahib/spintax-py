@@ -1,5 +1,7 @@
 """Example usage of spintax-py library"""
 
+import random
+
 from spintaxpy import parse, count, choose, spintax_range
 
 print("=" * 60)
@@ -50,6 +52,15 @@ print(f"  - Specific (0, 1): {picker(0, 1)}")
 print(f"  - Specific (2, 0): {picker(2, 0)}")
 print(f"  - Random: {picker()}")
 print(f"  - Random: {picker()}")
+
+# Example 7b: Random seeding for reproducibility
+print("\n7b. Choose with random.seed (reproducible):")
+picker_seeded = choose("{alpha|beta} {cat|dog}")
+random.seed(123)
+print(f"  - Seeded pick 1: {picker_seeded()}")
+print(f"  - Seeded pick 2: {picker_seeded()}")
+random.seed(123)
+print(f"  - Seeded pick 1 again (same as first): {picker_seeded()}")
 
 # Example 8: URL generation
 print("\n8. URL Generation:")
