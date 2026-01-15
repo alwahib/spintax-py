@@ -6,6 +6,14 @@ This is a Python implementation of the [spintax](https://github.com/johnhenry/sp
 
 ## Installation
 
+Install from PyPI:
+
+```bash
+pip install spintax-py
+```
+
+Or install from source:
+
 ```bash
 pip install .
 ```
